@@ -1,0 +1,996 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.modern-antiqua-regular {
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+@media(max-width:599px){
+    header{
+        /* height: 150px; */
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(158, 209, 229);
+    }
+    .logo_part{
+        /* height: 150px; */
+        width: 20%;
+        padding: 0;
+    }
+    
+    .logo_part_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .logo_second_part{
+        width: 75%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .a1{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-decoration: none;
+        align-items: center;
+        font-size: 1rem;
+        padding-right: 8px;
+        color: rgb(0, 0, 0);
+    }
+
+    .a1:hover{
+        text-decoration:dotted;
+        color: brown;
+        font-size: 1.2rem;
+    }
+                        /*      End header       */             
+    .advaticement{
+        /* height: 350px; */
+        width: 100%;
+        box-shadow: 5px 0.5px ;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider img{
+        height: 320px;
+        width: 100%;
+        opacity: 0.90;
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    @keyframes fade {
+        from {opacity: .7}
+        to{opacity:1.2}
+    }    
+    .one{
+        position: absolute;
+        top: 9px;
+        left: 20px;
+        right: 0;
+        text-align: center;
+    }
+    .dis1{
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .dis2{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-justify: auto;
+    }
+    .Book{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        background-color: rgb(57, 50, 50);
+        color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+        padding: 13px;
+        text-decoration: none;
+        box-shadow: 0px 0.5px 5px 2px;
+        cursor: pointer;
+    }
+    .Book:hover{
+        color: rgb(248, 227, 227);
+        font-size: 1.9rem;
+    }
+
+                     /* end advaticement  */
+    .TripCreateItem{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Show_place p{
+        font-family: "Modern Antiqua", serif;
+        font-size: 1.6rem;
+        line-height: 8px;
+        font-weight: bold;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        padding-left: 13px;
+        color: rgb(209, 194, 194);
+    }
+    .TripCreateItem a{
+        font-family: "Modern Antiqua", serif;
+        font-size: 1rem;
+        line-height: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        color: rgb(254, 253, 253);
+        border-right: 1px solid white;
+        padding-right: 5px;
+        word-spacing: 1.1px;
+        letter-spacing: 1px;
+    }
+    .TripCreateItem a:hover{
+        font-size: 1.2rem;
+        color: aqua;
+    }
+    .popularPlaces{
+        line-height: 10px;
+        /* border: 1px solid; */
+    }
+    .popularPlaces p{
+        font-family: "Modern Antiqua", serif;
+        color: black;
+        padding-left: 15px;
+        font-size: 1.5rem;
+        line-height: 20px;
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+    .popularCont{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .London{
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        width: 47%;
+        box-shadow: 1px 1px 5px 2px;
+        margin-bottom: 10px;
+        height: 215px;
+    }
+    .londonPic{
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 100%;
+        cursor: pointer;
+    }
+    .London:hover{
+        scale: 1.05;
+    }
+    .londonImg{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .londonContent{
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .londonContent a{
+        font-family: "Modern Antiqua", serif;
+        /* text-decoration: none; */
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        align-self: center;
+        padding-left: 5px;
+    }
+    .londonContent a:hover{
+        color: rgb(9, 47, 73);
+        font-size: 1.35rem;
+    }
+    .londonContent p{
+        font-family: "Modern Antiqua", serif;
+        font-size: .7rem;
+        padding-right: 5px;
+        color: rgb(50, 51, 51);
+        cursor: default;
+    }
+                            /* End Popular Part  */
+    .mainbody{
+        font-family: "Modern Antiqua", serif;
+    }
+    .Show_place{
+        font-family: "Modern Antiqua", serif;
+        border-top: 2px solid rgb(46, 44, 44);
+        border-bottom: 2px solid rgb(91, 88, 88);
+        margin-top: 2px;
+        background-color: rgb(64, 82, 97);
+        color: rgb(253, 254, 255);
+    }
+    .show_places{
+        font-family: "Modern Antiqua", serif;
+        font-size: 23px;
+        font-weight: bold;
+        padding-left: 12px;
+    }
+    .containers{
+        height: 200px;
+        width: 100%;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 15px;
+    }
+    .container{
+        width: 60%;
+        margin-left: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 2px;
+        /* border: 1px solid black; */
+        height: 200px;
+        cursor: pointer;
+    }
+    .container:hover{
+        scale: 1.02;
+    }
+    .containerImg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .containerPara {
+        align-self: center;
+        cursor: pointer;
+    }
+    .containerPara p{
+        cursor: default;
+    }
+    .containerPara h1:hover{
+        font-weight: bold;
+        color: rgb(4, 63, 63);
+        scale: 1.09;
+        text-decoration: underline;
+    }
+
+                    /*__ Main__End__ */
+    
+    footer{
+        background-color: rgb(64, 82, 97);
+        font-family: "Modern Antiqua", serif;
+    }
+    .mapDiv{
+        /* margin: 0 30px 3px 3px; */
+        width: 100%;
+    }
+    .mapDiv iframe{
+        width: 100%;
+        height: 250px;
+        margin-top: 0;
+        border: none;
+    }
+    .quicklink{
+        color: aliceblue;
+        margin-left: 3%;
+        cursor: progress;
+    }
+    .quicklink h3{
+        font-size: 1.5rem;
+    }
+    .footerDiv p{
+        font-size: 1rem;
+        color: red;
+        cursor: wait;
+    }
+    .futterDiv2 p{
+        font-size: 1rem;
+        color: red;
+        cursor: wait;
+    }
+    .footerEnd{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        padding-bottom: 20px;
+    }
+}
+
+@media(min-width:600px) and (max-width:1024px){
+    header{
+        height: 130px;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(158, 209, 229);
+    }
+    .logo_part{
+        /* height: 150px; */
+        width: auto;
+        padding: 0;
+    }
+    
+    .logo_part_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .logo_second_part{
+        width: 85%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .a1{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+        text-decoration: none;
+        align-items: center;
+        font-size: 1.3rem;
+        padding-right: 17px;
+        color: rgb(0, 0, 0);
+    }
+
+    .a1:hover{
+        text-decoration:dotted;
+        color: brown;
+        font-size: 2.2rem;
+    }
+                        /*      End header       */             
+    .advaticement{
+        /* height: 350px; */
+        width: 100%;
+        box-shadow: 5px 0.5px ;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider img{
+        height: 420px;
+        width: 100%;
+        opacity: 0.90;
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    @keyframes fade {
+        from {opacity: .7}
+        to{opacity:1.2}
+    }    
+    .one{
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        right: 0;
+        text-align: center;
+    }
+    .dis1{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .dis2{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-justify: auto;
+    }
+    .Book{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        border: none;
+        border-radius: 10px;
+        font-size: 2.5rem;
+        background-color: rgb(57, 50, 50);
+        color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+        box-shadow: 0px 0.5px 5px 2px;
+        cursor: pointer;
+    }
+    .Book:hover{
+        color: rgb(248, 227, 227);
+        font-size: 2.7rem;
+    }
+
+                     /* end advaticement  */
+    .TripCreateItem{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Show_place p{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.1rem;
+        line-height: 16px;
+        font-weight: bold;
+        word-spacing: 5px;
+        letter-spacing: 1px;
+        padding-left: 13px;
+        color: rgb(209, 194, 194);
+    }
+    .TripCreateItem a{
+        font-family: "Modern Antiqua", serif;
+        font-size: 1.2rem;
+        line-height: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        color: rgb(254, 253, 253);
+        border-right: 1px solid white;
+        padding-right: 7px;
+        word-spacing: 1.1px;
+        letter-spacing: 1px;
+    }
+    .TripCreateItem a:hover{
+        font-size: 1.28rem;
+        color: aqua;
+    }
+    .popularPlaces{
+        line-height: 15px;
+        /* border: 1px solid; */
+        background-color: rgb(248, 248, 248);
+    }
+    .popularPlacesDiv{
+        margin: 0 7%;
+    }
+    .popularPlaces p{
+        font-family: "Modern Antiqua", serif;
+        color: black;
+        padding-left: 15px;
+        font-size: 2.2rem;
+        line-height: 20px;
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+    .popularCont{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .London{
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 2px;
+        width: 46%;
+        height: 260px;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+    }
+    .londonPic{
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 100%;
+        cursor: pointer;
+    }
+    .London:hover{
+        scale: 1.1;
+    }
+    .londonImg{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .londonContent{
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .londonContent a{
+        font-family: "Modern Antiqua", serif;
+        /* text-decoration: none; */
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        align-self: center;
+        padding-left: 3px;
+    }
+    .londonContent a:hover{
+        color: rgb(9, 47, 73);
+        font-size: 1.35rem;
+    }
+    .londonContent p{
+        font-family: "Modern Antiqua", serif;
+        font-size: .8rem;
+        align-self: center;
+        padding-right: 5px;
+        color: rgb(50, 51, 51);
+        cursor: default;
+    }
+                            /* End Popular Part  */
+    .mainbody{
+        font-family: "Modern Antiqua", serif;
+    }
+    .Show_place{
+        font-family: "Modern Antiqua", serif;
+        border-top: 2px solid rgb(46, 44, 44);
+        border-bottom: 2px solid rgb(91, 88, 88);
+        margin-top: 4px;
+        background-color: rgb(64, 82, 97);
+        color: rgb(253, 254, 255);
+    }
+    .show_places{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+    .containers{
+        /* height: 200px; */
+        width: 100%;
+        margin:10px 8%;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 20px;
+    }
+    .container{
+        width: 35%;
+        margin-left: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 2px;
+        /* border: 1px solid black; */
+        height: auto;
+        cursor: pointer;
+    }
+    .container:hover{
+        scale: 1.08;
+    }
+    .containerImg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .containerPara {
+        align-self: center;
+        cursor: pointer;
+    }
+    .containerPara p{
+        cursor: default;
+    }
+    .containerPara h1:hover{
+        font-weight: bold;
+        color: rgb(4, 63, 63);
+        scale: 1.09;
+        text-decoration: underline;
+    }
+
+                    /*__ Main__End__ */
+    
+    footer{
+        background-color: rgb(64, 82, 97);
+        font-family: "Modern Antiqua", serif;
+    }
+    .mapDiv{
+        /* margin: 0 30px 3px 3px; */
+        width: 100%;
+    }
+    .mapDiv iframe{
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+        border: none;
+    }
+    .quicklink{
+        color: aliceblue;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .footerDiv div{
+        display: flex;
+        color: red;
+        font-size: 1.2rem;
+        justify-content: center;
+        justify-content: space-evenly;
+        cursor: wait;
+    }
+    .quicklink h3{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: progress;
+        /* align-content: center; */
+    }
+    .futterDiv2{
+        display: flex;
+        color: red;
+        font-size: 1.2rem;
+        justify-content: center;
+        justify-content: space-evenly;
+        cursor: wait;
+    }
+    .footerEnd{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        cursor: wait;
+        padding-bottom: 20px;
+    }
+}
+
+@media(min-width:1025px){
+    header{
+        height: 120px;
+        width: 100%;
+        border-bottom: 5px solid black;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(158, 209, 229);
+    }
+    .logo_part{
+        /* height: 150px; */
+        width: auto;
+        padding: 0;
+    }
+    
+    .logo_part_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .logo_second_part{
+        width: 85%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .a1{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+        text-decoration: none;
+        align-items: center;
+        font-size: 2rem;
+        padding-right: 25px;
+        color: rgb(0, 0, 0);
+    }
+
+    .a1:hover{
+        text-decoration:dotted;
+        color: brown;
+        font-size: 2.4rem;
+    }
+                        /*      End header       */             
+    .advaticement{
+        /* height: 350px; */
+        width: 100%;
+        box-shadow: 5px 0.5px ;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .slider{
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider img{
+        height: 500px;
+        width: 100%;
+        opacity: 0.90;
+        display: none;
+    }
+    img.displaySlide{
+        display: block;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    @keyframes fade {
+        from {opacity: .7}
+        to{opacity:1.2}
+    }    
+    .one{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        right: 0;
+        text-align: center;
+    }
+    .dis1{
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .dis2{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-justify: auto;
+    }
+    .Book{
+        font-family: "Modern Antiqua", serif;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        word-spacing: 2.3px;
+        border: none;
+        border-radius: 10px;
+        font-size: 2.5rem;
+        background-color: rgb(57, 50, 50);
+        color: whitesmoke;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+        box-shadow: 0px 0.5px 5px 2px;
+        cursor: pointer;
+    }
+    .Book:hover{
+        color: rgb(248, 227, 227);
+        font-size: 3rem;
+    }
+
+                     /* end advaticement  */
+    .TripCreateItem{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Show_place p{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.1rem;
+        line-height: 11px;
+        font-weight: bold;
+        word-spacing: 7px;
+        letter-spacing: 1.5px;
+        padding-left: 19px;
+        color: rgb(209, 194, 194);
+    }
+    .TripCreateItem a{
+        font-family: "Modern Antiqua", serif;
+        font-size: 1.5rem;
+        line-height: 21px;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        color: rgb(254, 253, 253);
+        border-right: 2px solid white;
+        padding-right: 9px;
+        word-spacing: 1.3px;
+        letter-spacing: 1.1px;
+    }
+    .TripCreateItem a:hover{
+        font-size: 1.8rem;
+        color: aqua;
+    }
+    .popularPlaces{
+        /* line-height: 15px; */
+        /* border: 1px solid; */
+        background-color: rgb(248, 248, 248);
+    }
+    .popularPlacesDiv{
+        margin: 0 15%;
+    }
+    .popularPlaces p{
+        font-family: "Modern Antiqua", serif;
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 2.5rem;
+        line-height: 21px;
+        font-weight: bold;
+    }
+    .popularCont{
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .London{
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        width: 40%;
+        margin-bottom: 20px;
+        height: 325px;
+        box-shadow: 0px 0px 3px 1px;
+    }
+    .londonPic{
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 100%;
+        cursor: pointer;
+    }
+    .London:hover{
+        scale: 1.07;
+    }
+    .londonImg{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .londonContent{
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .londonContent a{
+        font-family: "Modern Antiqua", serif;
+        /* text-decoration: none; */
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        align-self: center;
+        padding-left: 9px;
+    }
+    .londonContent a:hover{
+        color: rgb(9, 47, 73);
+        font-size: 1.65rem;
+    }
+    .londonContent p{
+        font-family: "Modern Antiqua", serif;
+        font-size: 1rem;
+        align-self: center;
+        padding-right: 6px;
+        color: rgb(50, 51, 51);
+        cursor: default;
+    }
+                            /* End Popular Part  */
+    .mainbody{
+        font-family: "Modern Antiqua", serif;
+    }
+    .Show_place{
+        font-family: "Modern Antiqua", serif;
+        border-top: 2px solid rgb(46, 44, 44);
+        border-bottom: 2px solid rgb(91, 88, 88);
+        margin-top: 4px;
+        background-color: rgb(64, 82, 97);
+        color: rgb(253, 254, 255);
+    }
+    .show_places{
+        font-family: "Modern Antiqua", serif;
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .containers{
+        /* height: 200px; */
+        width: 100%;
+        margin:10px 8%;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 23px;
+    }
+    .container{
+        width: 25%;
+        margin-left: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 2px;
+        /* border: 1px solid black; */
+        height: auto;
+        cursor: pointer;
+    }
+    .container:hover{
+        scale: 1.08;
+    }
+    .containerImg{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .containerPara {
+        align-self: center;
+        cursor: pointer;
+    }
+    .containerPara p{
+        cursor: default;
+    }
+    .containerPara h1:hover{
+        font-weight: bold;
+        color: rgb(4, 63, 63);
+        scale: 1.09;
+        text-decoration: underline;
+    }
+
+                    /*__ Main__End__ */
+    
+    footer{
+        background-color: rgb(64, 82, 97);
+        font-family: "Modern Antiqua", serif;
+    }
+    .mapDiv{
+        /* margin: 0 30px 3px 3px; */
+        width: 100%;
+    }
+    .mapDiv iframe{
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+        border: none;
+    }
+    .quicklink{
+        color: aliceblue;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .footerDiv div{
+        display: flex;
+        color: red;
+        font-size: 1.2rem;
+        justify-content: center;
+        justify-content: space-evenly;
+        cursor: wait;
+    }
+    .quicklink h3{
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: progress;
+        /* align-content: center; */
+    }
+    .futterDiv2{
+        display: flex;
+        color: red;
+        font-size: 1.2rem;
+        justify-content: center;
+        justify-content: space-evenly;
+        cursor: wait;
+    }
+    .footerEnd{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        cursor: wait;
+        padding-bottom: 20px;
+    }
+}
+
